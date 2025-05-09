@@ -1,0 +1,312 @@
+<!DOCTYPE html><html>
+        <head>
+        <title>cd_hw</title>
+        <meta charset="utf-8">
+<meta property="head" content="H2">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/fonts/icomoon/style.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/bootstrap.min.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/magnific-popup.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/jquery-ui.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/owl.carousel.min.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/owl.theme.default.min.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/bootstrap-datepicker.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/fonts/flaticon/font/flaticon.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/aos.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/style.css">
+        <link rel="shortcut icon" href="./../cmsimde/static/favicons.png">
+        
+        <style type='text/css'>
+            .site-section {
+            background-color: #FFFF;
+            padding: 40px 40px;
+            }
+            body > div > div.dropdown.open {
+                display: block;
+            }
+        </style>
+    
+        <!-- <script src="./../cmsimde/static/jquery.js"></script> -->
+        <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
+        <script src="../cmsimde/static/chimper/js/jquery-3.3.1.min.js"></script>
+        <link rel="stylesheet" href="./../cmsimde/static/tipuesearch/css/normalize.min.css">
+        <script src="./../cmsimde/static/tipuesearch/tipuesearch_set.js"></script>
+        <script src="tipuesearch_content.js"></script>
+        <link rel="stylesheet" href="./../cmsimde/static/tipuesearch/css/tipuesearch.css">
+        <script src="./../cmsimde/static/tipuesearch/tipuesearch.js"></script>
+        <!-- for Wink3 客製化關閉 -->
+        <!--
+        <link rel="stylesheet" type="text/css" href="./../cmsimde/static/winkPlayer.css" />
+        <script type="text/javascript" src="./../cmsimde/static/winkPlayer.js"></script>
+        -->
+        <script>
+            /* original tipuesearch
+            $(document).ready(function() {
+                 $('#tipue_search_input').tipuesearch();
+            });
+            */
+            // customed doSearch
+            function doSearch() {
+                $('#tipue_search_input').tipuesearch({
+                    newWindow: true, 
+                    minimumLength: 2,
+                    wholeWords: false, // for search 中文
+                });
+            }
+            $(document).ready(doSearch);
+        </script>
+        
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shCore.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushBash.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushDiff.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushJScript.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushJava.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushPython.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushSql.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushHaxe.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushXml.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushPhp.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushPowerShell.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushLua.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushMojo.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushWbt.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushCpp.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushCss.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushCSharp.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushDart.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushRust.js"></script>
+<link type="text/css" rel="stylesheet" href="./../cmsimde/static/syntaxhighlighter/css/shCoreDefault.css"/>
+<script type="text/javascript">SyntaxHighlighter.all();</script>
+<!-- 暫時不用
+<script src="./../cmsimde/static/fengari-web.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/Cango-13v08-min.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/CangoAxes-4v01-min.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/gearUtils-05.js"></script>
+-->
+<!-- for Brython 暫時不用
+<script src="https://scrum-3.github.io/web/brython/brython.js"></script>
+<script src="https://scrum-3.github.io/web/brython/brython_stdlib.js"></script>
+-->
+<style>
+img.add_border {
+    border: 3px solid blue;
+}
+</style>
+
+</head>
+<body>
+<div class='container'><nav>
+        
+    <div class="site-wrap">
+
+    <div class="site-mobile-menu">
+      <div class="site-mobile-menu-header">
+        <div class="site-mobile-menu-close mt-3">
+          <span class="icon-close2 js-menu-toggle"></span>
+        </div>
+      </div>
+      <div class="site-mobile-menu-body"></div>
+    </div>
+    
+            <header class="site-navbar py-4 bg-white" role="banner">
+              <div class="container">
+                <div class="row align-items-center">
+                <h1>cd2025 協同產品設計實習41223143</h1>
+                <div class="pl-4">
+                    <form>
+                    <input type="text" placeholder="Search" name="q" id="tipue_search_input" pattern=".{2,}" title="At least 2 characters" required>
+                    </form>
+                </div>
+                  <!-- <div class="col-11 col-xl-2">
+                    <h1 class="mb-0 site-logo"><a href="index.html" class="text-black h2 mb-0">cd2025 協同產品設計實習41223143</a></h1> 
+                  </div>
+                  -->
+                  <div class="col-12 col-md-10 d-none d-xl-block">
+                    <nav class="site-navigation position-relative text-right" role="navigation">
+    <ul class='site-menu js-clone-nav mr-auto d-none d-lg-block'>
+                        <li class="active has-children"><a href="index.html">Home</a>
+                        <ul class="dropdown">
+                            <li><a href="sitemap.html">SMap</a></li>
+                            <li><a href="./../reveal/index.html">reveal</a></li>
+                            <li><a href="./../blog/index.html">blog</a></li>
+                        </ul>
+                      </li>
+                     <li><a href='About.html'>About</a><li class='has-children'><a href='task.html'>task</a><ul class='dropdown'><li><a href='task5.html'>task5</a></li></ul><li class='has-children'><a href='Homework.html'>Homework</a><ul class='dropdown'><li><a href='HW1.html'>HW1</a><li><a href='HW2.html'>HW2</a><li><a href='HW3.html'>HW3</a></li></ul><li><a href='Midterm.html'>Midterm</a><li class='has-children'><a href='Exam.html'>Exam</a><ul class='dropdown'><li><a href='Exam1.html'>Exam1</a><li><a href='Exam2.html'>Exam2</a><li><a href='Exam3.html'>Exam3</a></li></ul><li><a href='Final.html'>Final</a><li><a href='Brython.html'>Brython</a></li>
+                      </ul>
+                </nav>
+              </div>
+              <div class="d-inline-block d-xl-none ml-md-0 mr-auto py-3" style="position: relative; top: 3px;"><a href="#" class="site-menu-toggle js-menu-toggle text-black"><span class="icon-menu h3"></span></a></div>
+              </div>
+
+            </div>
+          </div>
+          
+        </header>
+    <div id="tipue_search_content">task << <a href='task.html'>Previous</a> <a href='Homework.html'>Next</a> >> Homework<br /><h1>task5</h1>
+<p>5.請詳細說明如何採手動方式在 Webots 建立下列場景:</p>
+<p>6希望可以手把手一步步說明該如何利用圖形介面 menu 建立這個場景, 過程中有那些要點必須特別注意?</p>
+<p>步驟一：創建一個新的 Webots 專案<br/>啟動 Webots：打開 Webots 軟體。</p>
+<p>創建新專案：</p>
+<p>點擊 File (檔案) 菜單，選擇 New Project Directory (新建專案目錄)。</p>
+<p>輸入專案名稱並選擇儲存位置。</p>
+<p>確保勾選 "Create a new world" (創建新世界) 選項，這樣 Webots 會自動為您創建一個新的 .wbt 世界文件。</p>
+<p>步驟二：設置地面 (Ground)<br/>打開場景編輯器：在左側的「場景樹」中，您將看到一個名為 default 的世界。點擊這個世界，然後選擇 Add (添加)。</p>
+<p>添加地面：</p>
+<p>在彈出的窗口中選擇 Solid，這樣可以添加一個固體物體。</p>
+<p>在「位置」(Translation) 欄位中，將 Z 軸設置為 -0.1，這樣地面會稍微下降，避免與其他物體重疊。</p>
+<p>在 Appearance 欄位中，選擇顏色或貼圖來設置地面的外觀。通常我們可以選擇顏色，例如 Gray (灰色)，這樣看起來像是地面。</p>
+<p>步驟三：添加障礙物<br/>添加一個障礙物：</p>
+<p>點擊 Add (添加) 按鈕，再選擇 Solid 來添加一個固體物體作為障礙物。</p>
+<p>將物體的 Translation 欄位設置為 (0, 0, 0.1)，讓它位於地面上方。</p>
+<p>您可以改變它的 Size (大小) 欄位，例如設置為 (0.5, 0.5, 0.5)，這樣它會成為一個 0.5 米見方的立方體障礙物。</p>
+<p>變更其外觀，在 Appearance 欄位選擇 Color 或 Texture 來設置障礙物的顏色或貼圖。</p>
+<p>步驟四：添加機器人<br/>選擇機器人模型：</p>
+<p>點擊 Add (添加)，在彈出的選擇框中選擇 Robot 類型，您可以選擇 Webots 提供的預設機器人模型，比如 e-puck 或 Simple Robot。</p>
+<p>點擊 Add，這樣機器人就會被加入到場景中。</p>
+<p>設定機器人的位置：</p>
+<p>點擊場景樹中的機器人，進入其 Translation (位置) 欄位。</p>
+<p>將其位置設置為 (0, 0, 0.3)，這樣它會位於地面之上，且不會與障礙物重疊。</p>
+<p>步驟五：設置機器人控制器<br/>設置機器人的控制程式：</p>
+<p>在機器人物件的 Controller 欄位，選擇一個預設的控制程式，或者點擊 New 來創建一個新的控制程式。</p>
+<p>若選擇新建控制程式，Webots 會要求您指定程式語言（C、C++、Python 等），並自動在專案中創建一個新的控制器文件。</p>
+<p>您可以選擇使用預設控制器，或編寫您自己的程式來控制機器人的行為，例如使用 Python 控制機器人的簡單前進。</p>
+<p>步驟六：保存和運行場景<br/>保存世界文件：確保所有的修改都已經保存，點擊 File (檔案)，選擇 Save World 來保存當前世界文件。</p>
+<p>運行場景：</p>
+<p>點擊上方的綠色播放按鈕，Webots 會啟動模擬，並執行您設置的機器人控制程式。</p>
+<p>您可以觀察機器人如何在世界中移動，並與障礙物進行互動。</p>
+<p>特別注意的要點：<br/>位置設置：當設置機器人和障礙物的位置時，確保它們不會重疊在一起，這樣避免模型無法正常運行。特別注意 Translation 的 Z 軸值，它控制物體的垂直位置。</p>
+<p>控制程式設定：每個機器人都需要指定一個控制程式。您可以使用預設的控制程式來測試機器人的基本行為，但若需要自定義行為，必須撰寫相應的控制程式。</p>
+<p>物理屬性：設置物體的物理屬性（如質量、摩擦係數）時，請注意這會影響模擬的結果。例如，障礙物應該設置為具有較高的摩擦係數，而地面則可以選擇較低的摩擦，以模擬正常的行走環境。</p>
+<p>機器人模型選擇：Webots 提供多種機器人模型，您可以根據需要選擇適合的機器人。在選擇機器人時，請確保其有正確的控制程式並與您的場景相匹配。</p>
+<ol data-end="932" data-start="671">
+<li class="" data-end="932" data-start="671">
+<p class="" data-end="686" data-start="674"><strong data-end="685" data-start="674">添加一個障礙物</strong>：</p>
+<ul data-end="932" data-start="690">
+<li class="" data-end="736" data-start="690">
+<p class="" data-end="736" data-start="692">點擊<span> </span><code data-end="700" data-start="695">Add</code><span> </span>(添加) 按鈕，再選擇<span> </span><code data-end="720" data-start="713">Solid</code><span> </span>來添加一個固體物體作為障礙物。</p>
+</li>
+<li class="" data-end="790" data-start="740">
+<p class="" data-end="790" data-start="742">將物體的<span> </span><code data-end="760" data-start="747">Translation</code><span> </span>欄位設置為<span> </span><code data-end="780" data-start="767">(0, 0, 0.1)</code>，讓它位於地面上方。</p>
+</li>
+<li class="" data-end="867" data-start="794">
+<p class="" data-end="867" data-start="796">您可以改變它的<span> </span><code data-end="810" data-start="804">Size</code><span> </span>(大小) 欄位，例如設置為<span> </span><code data-end="842" data-start="825">(0.5, 0.5, 0.5)</code>，這樣它會成為一個 0.5 米見方的立方體障礙物。</p>
+</li>
+<li class="" data-end="932" data-start="871">
+<p class="" data-end="932" data-start="873">變更其外觀，在<span> </span><code data-end="893" data-start="881">Appearance</code><span> </span>欄位選擇<span> </span><code data-end="906" data-start="899">Color</code><span> </span>或<span> </span><code data-end="918" data-start="909">Texture</code><span> </span>來設置障礙物的顏色或貼圖。</p>
+<p class="" data-end="932" data-start="873"></p>
+<strong>步驟四：添加機器人</strong></li>
+</ul>
+</li>
+</ol>
+<ol data-end="1202" data-start="952">
+<li class="" data-end="1092" data-start="952">
+<p class="" data-end="967" data-start="955"><strong data-end="966" data-start="955">選擇機器人模型</strong>：</p>
+<ul data-end="1092" data-start="971">
+<li class="" data-end="1062" data-start="971">
+<p class="" data-end="1062" data-start="973">點擊<span> </span><code data-end="981" data-start="976">Add</code><span> </span>(添加)，在彈出的選擇框中選擇<span> </span><code data-end="1005" data-start="998">Robot</code><span> </span>類型，您可以選擇 Webots 提供的預設機器人模型，比如<span> </span><code data-end="1044" data-start="1036">e-puck</code><span> </span>或<span> </span><code data-end="1061" data-start="1047">Simple Robot</code>。</p>
+</li>
+<li class="" data-end="1092" data-start="1066">
+<p class="" data-end="1092" data-start="1068">點擊<span> </span><code data-end="1076" data-start="1071">Add</code>，這樣機器人就會被加入到場景中。</p>
+</li>
+</ul>
+</li>
+<li class="" data-end="1202" data-start="1094">
+<p class="" data-end="1110" data-start="1097"><strong data-end="1109" data-start="1097">設定機器人的位置</strong>：</p>
+<p class="" data-end="1153" data-start="1116">點擊場景樹中的機器人，進入其<span> </span><code data-end="1144" data-start="1131">Translation</code><span> </span>(位置) 欄位。</p>
+<p class="" data-end="1153" data-start="1116">將其位置設置為<span> </span><code data-end="1180" data-start="1167">(0, 0, 0.3)</code>，這樣它會位於地面之上，且不會與障礙物重疊。</p>
+</li>
+</ol>
+<blockquote>
+<h5 data-end="1224" data-start="1204">步驟五：設置機器人控制器</h5>
+<p><strong>步驟五：設置機器人控制器</strong></p>
+</blockquote>
+<ol data-end="1438" data-start="1225">
+<li class="" data-end="1438" data-start="1225">
+<p class="" data-end="1243" data-start="1228"><strong data-end="1242" data-start="1228">設置機器人的控制程式</strong>：</p>
+<ul data-end="1438" data-start="1247">
+<li class="" data-end="1308" data-start="1247">
+<p class="" data-end="1308" data-start="1249">在機器人物件的<span> </span><code data-end="1269" data-start="1257">Controller</code><span> </span>欄位，選擇一個預設的控制程式，或者點擊<span> </span><code data-end="1295" data-start="1290">New</code><span> </span>來創建一個新的控制程式。</p>
+</li>
+<li class="" data-end="1377" data-start="1312">
+<p class="" data-end="1377" data-start="1314">若選擇新建控制程式，Webots 會要求您指定程式語言（C、C++、Python 等），並自動在專案中創建一個新的控制器文件。</p>
+</li>
+<li class="" data-end="1438" data-start="1381">
+<p class="" data-end="1438" data-start="1383">您可以選擇使用預設控制器，或編寫您自己的程式來控制機器人的行為，例如使用 Python 控制機器人的簡單前進。</p>
+<strong>步驟六：保存和運行場景</strong></li>
+</ul>
+</li>
+</ol>
+<ol data-end="1620" data-start="1460">
+<li class="" data-end="1528" data-start="1460">
+<p class="" data-end="1528" data-start="1463"><strong data-end="1473" data-start="1463">保存世界文件</strong>：確保所有的修改都已經保存，點擊<span> </span><code data-end="1496" data-start="1490">File</code><span> </span>(檔案)，選擇<span> </span><code data-end="1517" data-start="1505">Save World</code><span> </span>來保存當前世界文件。</p>
+</li>
+<li class="" data-end="1620" data-start="1529">
+<p class="" data-end="1541" data-start="1532"><strong data-end="1540" data-start="1532">運行場景</strong>：</p>
+<p class="" data-end="1587" data-start="1547">點擊上方的綠色播放按鈕，Webots 會啟動模擬，並執行您設置的機器人控制程式。</p>
+<p class="" data-end="1620" data-start="1593">您可以觀察機器人如何在世界中移動，並與障礙物進行互動。</p>
+<strong>特別注意的要點:</strong></li>
+</ol>
+<ol data-end="1984" data-start="1639">
+<li class="" data-end="1728" data-start="1639">
+<p class="" data-end="1728" data-start="1642"><strong data-end="1650" data-start="1642">位置設置</strong>：當設置機器人和障礙物的位置時，確保它們不會重疊在一起，這樣避免模型無法正常運行。特別注意<span> </span><code data-end="1709" data-start="1696">Translation</code><span> </span>的 Z 軸值，它控制物體的垂直位置。</p>
+</li>
+<li class="" data-end="1810" data-start="1733">
+<p class="" data-end="1810" data-start="1736"><strong data-end="1746" data-start="1736">控制程式設定</strong>：每個機器人都需要指定一個控制程式。您可以使用預設的控制程式來測試機器人的基本行為，但若需要自定義行為，必須撰寫相應的控制程式。</p>
+</li>
+<li class="" data-end="1904" data-start="1812">
+<p class="" data-end="1904" data-start="1815"><strong data-end="1823" data-start="1815">物理屬性</strong>：設置物體的物理屬性（如質量、摩擦係數）時，請注意這會影響模擬的結果。例如，障礙物應該設置為具有較高的摩擦係數，而地面則可以選擇較低的摩擦，以模擬正常的行走環境。</p>
+</li>
+<li class="" data-end="1984" data-start="1906">
+<p class="" data-end="1984" data-start="1909"><strong data-end="1920" data-start="1909">機器人模型選擇</strong>：Webots 提供多種機器人模型，您可以根據需要選擇適合的機器人。在選擇機器人時，請確保其有正確的控制程式並與您的場景相匹配。</p>
+</li>
+</ol><br />task << <a href='task.html'>Previous</a> <a href='Homework.html'>Next</a> >> Homework</div>
+        
+    <!-- footer -->
+      <div class="container">
+        <div class="row pt-3 mx-auto">
+            <p>
+            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank" >Colorlib</a>
+            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            </p>
+        </div>
+      </div>
+    <!-- for footer -->
+    
+        </div> <!-- for site wrap -->
+            <!-- <script src="../cmsimde/static/chimper/js/jquery-3.3.1.min.js"></script> -->
+            <script src="../cmsimde/static/chimper/js/jquery-migrate-3.0.1.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery-ui.js"></script>
+            <script src="../cmsimde/static/chimper/js/popper.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/bootstrap.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/owl.carousel.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery.stellar.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery.countdown.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery.magnific-popup.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/bootstrap-datepicker.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/aos.js"></script>
+            <!--
+            <script src="../cmsimde/static/chimper/js/typed.js"></script>
+                    <script>
+                    var typed = new Typed('.typed-words', {
+                    strings: ["Web Apps"," WordPress"," Mobile Apps"],
+                    typeSpeed: 80,
+                    backSpeed: 80,
+                    backDelay: 4000,
+                    startDelay: 1000,
+                    loop: true,
+                    showCursor: true
+                    });
+                    </script>
+            -->
+            <script src="../cmsimde/static/chimper/js/main.js"></script>
+        
+<!-- 啟用 LaTeX equations 編輯 -->
+  <!-- <script>
+  MathJax = {
+    tex: {inlineMath: [['$', '$'], ['\(', '\)']]}
+  };
+  </script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>-->
+    </body></html>
+        
